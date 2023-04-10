@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&display=swap');
+
+ body {
+	 margin: 0;
+}
+
+ #main {
+	 position: relative;
+	 z-index: 20;
+	 background: #fff;
+	 transition: transform 0.6s ease;
+}
+
+ .fake-section {
+	 background: #eee;
+	 height: 300px;
+}
+ .tiles-a {
+	 width: 100%;
+	 position: relative;
+	 overflow: hidden;
+}
+ .tiles-a ul {
+	 margin: 0;
+	 padding: 0;
+}
+ .tiles-a li {
+	 list-style: none;
+   float: left;
+	width: 33.33%;
+}
+
+ .tiles-a a {
+	 margin: 1em;
+	 display: block;
+	 padding-top: 73%;
+	 height: 0;
+}
+
+ .tiles-a a:hover {
+	 opacity: 0.5;
+}
+
+ #aside {
+	 position: fixed;
+	 top: 0;
+	 right: 0;
+	 width: 60%;
+	 height: 100%;
+	 background: white;
+	 overflow-y: scroll;
+	 z-index: 10;
+}
+ #aside img {
+	 width: 100%;
+	 height: auto;
+	 vertical-align: top;
+}
+ #aside .wrapper {
+	 padding: 1em;
+}
+ #aside .close {
+	 width: 25px;
+	 display: block;
+	 position: absolute;
+	 top: 1em;
+	 right: 1em;
+	 background-color: transparent;
+	 border-radius: 50%;
+}
+ .show-detail {
+	 overflow: hidden;
+}
+ .show-detail #main {
+	 transform: translateX(-60%);
+}
+ .visually-hidden {
+	 position: absolute;
+	 overflow: hidden;
+	 clip: rect(0 0 0 0);
+	 height: 1px;
+	 width: 1px;
+	 margin: -1px;
+	 padding: 0;
+	 border: 0;
+}
+
+#aside h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;  
+}
+
+#aside p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;  
+}
