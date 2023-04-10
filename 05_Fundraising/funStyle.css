@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&display=swap');
+
+title {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  margin: 8px;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  margin: 8px;
+}
+
+.youtube-container {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  margin: 8px;
+}
+
+
+
+/* BUTTONS */
+.multi-button {
+  display: flex;
+  width: 100%;
+}
+
+.multi-button button {
+  font-family: 'Open Sans', sans-serif;
+  flex-grow: 1;
+  cursor: pointer;
+  position: relative;
+  padding:
+    calc(1rem / 1.125)
+    1rem
+    1rem;
+  border: 0.125rem solid black;
+  color: black;
+  background-color: white;
+  font-size: 1.5rem;
+  text-transform: lowercase;
+  transition: flex-grow 250ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.multi-button button:hover,
+.multi-button button:focus {
+  flex-grow: 2;
+  color: white;
+  outline: none;
+  text-shadow: none;
+  background-color: black;
+}
+
+.multi-button #button1:focus {
+  flex-grow: 2;
+  color: white;
+  outline: none;
+  text-shadow: none;
+  background-color: #FF333A;  
+  outline: 0.125rem dashed white;
+  outline-offset: calc(0.125rem * -3);
+}
+
+#button1:hover {
+  color: #FF333A;
+}
+
+
+
+ #main {
+	 position: relative;
+	 z-index: 20;
+	 background: #fff;
+	 transition: transform 0.6s ease;
+}
+
+ .fake-section {
+	 background: #eee;
+	 height: 300px;
+}
+ .tiles-a {
+	 width: 100%;
+	 position: relative;
+	 overflow: hidden;
+}
+ .tiles-a ul {
+	 margin: 0;
+	 padding: 0;
+}
+ .tiles-a li {
+	 list-style: none;
+   float: left;
+	width: 33.33%;
+}
+
+ .tiles-a a {
+	 margin: 1em;
+	 display: block;
+	 padding-top: 73%;
+	 height: 0;
+}
+
+ .tiles-a a:hover {
+	 opacity: 0.5;
+}
+
+ .show-detail {
+	 overflow: hidden;
+}
+ .show-detail #main {
+	 transform: translateX(-60%);
+}
+ .visually-hidden {
+	 position: absolute;
+	 overflow: hidden;
+	 clip: rect(0 0 0 0);
+	 height: 1px;
+	 width: 1px;
+	 margin: -1px;
+	 padding: 0;
+	 border: 0;
+}
