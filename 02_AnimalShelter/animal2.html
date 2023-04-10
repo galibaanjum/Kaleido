@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Stranimals Results</title>
+  <link href="/02_AnimalShelter/animalStyle.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="/dev_img/logo.png">
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+    <style>
+    body::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    /* Handle */
+    body::-webkit-scrollbar-thumb {
+      background: black;
+    }
+
+    /* Handle on hover */
+    body::-webkit-scrollbar-thumb:hover {
+      background: #FFBE0A;
+    }
+  </style>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+  <!--   NAVIGATION BAR -->
+  <div class="header">
+    <div class="logo">
+      <a href="/index.html"> Kaleido </a>
+    </div>
+    <div class="menu">
+      <a href="/01_Opportunities/opp.html" class="link">
+        <div>General Volunteerting</div>
+        <div style="border-bottom: 5px solid #FF333A;" class="bar"></div>
+      </a>
+      <a href="/02_AnimalShelter/animal.html" class="link">
+        <div>Stranimals</div>
+        <div style="border-bottom: 5px solid #FFBE0A;" class="bar"></div>
+      </a>
+      <a href="/03_Transportation/transport.html" class="link">
+        <div>OK-Transport</div>
+        <div style="border-bottom: 5px solid #82BC24;" class="bar"></div>
+      </a>
+      <a href="/04_Mentoring/mentor.html" class="link">
+        <div>H&C Mentoring</div>
+        <div style="border-bottom: 5px solid #1982C4;" class="bar"></div>
+      </a>
+      <a href="/05_Fundraising/fun.html" class="link">
+        <div>Fundraising</div>
+        <div style="border-bottom: 5px solid #6A4C93;" class="bar"></div>
+      </a>
+    </div>
+  </div>
+
+    <section>
+
+    <table id="animalTable"
+      class="whitespace-pre-wrap display font-sans border-4 border-light-blue-500 border-opacity-100 text-blue-900 leading-3 text-center bg-#FFE4E5-100">
+
+
+      <h1  class="stranimalsFont">
+          <div> <a href= "index.html">Stranimlas</a>
+            <i class='fas fa-cat' style='font-size:100px'></i>
+        </div>
+    </h1>
+      <h4 style="font-size: 20px;"> Showing Results for <span  style="font-weight: 700; color:#6A4C93;"id="pet_type"></span> near your Zip Code</h4>
+      <p> Click on Preferred Row to View Information</p>
+
+    </table>
+  </section>
+  
+  <div>
+    <button id="back-btn" onclick="history.back()">Go Back</button>
+  </div>
+  
+    <!--   FOOTER -->
+  <footer>
+
+    <div id="linkHeader">
+
+      <div class="links">
+        <ul>
+          <h3 class="left">Navigation</h3>
+          <li><a href="/01_Opportunities/opp.html">General Opportunities</a></li>
+          <li><a href="/02_AnimalShelter/animal.html">Animal Shelters</a></li>
+          <li><a href="/03_Transportation/transport.html">Alternative Transportation</a></li>
+          <li><a href="/04_Mentoring/mentor.html">Student Mentorship</a></li>
+          <li><a href="/05_Fundraising/fun.html">Fundraising</a></li>
+        </ul>
+      </div>
+
+
+      <div class="rectangle"></div>
+
+      <div style="margin-left: 1px;"class="contact">
+        <ul>
+          <h3 class="left">Contact</h3>
+          <li><a href="#">Company Information</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><img class="icon" width="18" height="14" src="https://png.pngitem.com/pimgs/s/148-1489577_transparent-pants-icon-png-chat-icon-png-transparent.png" </img><a href="#">Live Chat</a></li>
+          <li><img class="icon" width="15" height="15" src="https://www.kindpng.com/picc/m/501-5013043_telephone-phone-call-icon-symbol-vector-tel-icon.png" </img><a href="#">1-888-922-2336</a></li>
+        </ul>
+      </div>
+
+      <div class="rectangle"></div>
+
+      <div style="margin-left: 1px;" class="about">
+        <ul>
+          <h3 class="left">About Kaleido</h3>
+          <p class="footer_paragraph">Kaleido provides quality opportunities to passionate students all over the United
+            States. We equip and connect young adults to various ways to improve their technical skills while helping
+            their local community.</p>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="newsletter">
+      <h3 class="center">Never Miss An Opportunity!</h3>
+      <p>Weekly newsletter, blog posts, updates, and more.</p>
+      <form>
+        <input type="text" placeholder="Enter email address">
+        <input type="submit" value="Sign Up">
+      </form>
+    </div>
+
+
+    <div class="rectangle-horiz"></div>
+
+    <div id="copyright">
+      <p class="copy">© 2022 Kaleido. All Rights Reserved.</p>
+      <p class="copy">Privacy Policy | Terms and Conditions</p>
+    </div>
+
+
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
+  <script type="text/javascript" charset="utf8"
+ src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/fixedheader/3.1.9/js/dataTables.fixedHeader.min.js"></script>
+<script src="/02_AnimalShelter/animalScript2.js"></script>
+</body>
+</html>
