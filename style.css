@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;800&display=swap');
+
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none; 
+}
+
+.header a, footer a {
+  text-decoration: none; 
+  color: black;
+}
+
+.header {
+  width: 100%;
+  border-top: 3px solid #000;
+  border-bottom: 3px solid #000;
+  background-color: white;
+  text-align: right;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  margin-bottom: 5%;
+}
+
+.header .logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 32px;
+  font-weight: 700;
+  padding: 22px;
+  border-right: 3px solid black;
+}
+
+.header .link {
+  display: inline-block;
+  padding: 15px 0;
+  margin: 15px 25px;
+  position: relative;
+  text-decoration: none;
+/*   text-transform: uppercase; */
+  color: #0f0f0f;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+
+  
+.header .link  .bar {
+  width: 100%;
+  display: inline-block;
+  border-bottom: 5px solid black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 300ms;
+}
+  
+.header .link:hover .bar{
+  opacity: 1;
+  bottom: 5px;
+}
+
+
+
+/* FOOTER */
+footer {
+  border-top: 3px solid black;
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+  background-color: white;
+  margin-top: 5%;
+}
+
+.footer_paragraph{
+  font-size: 10px; 
+  line-height: 15px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  text-align: left;
+}
+  
+/* H3 Styling */
+
+footer h3.left {
+  color: #000;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  margin: 0 0 10px 0; 
+  text-align: left;
+
+}
+
+footer h3.center {
+  color: #000;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  margin: 0 0 10px 0; 
+  text-align: center;
+
+}
+
+
+footer ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+footer li {
+  margin: 0;
+  color: #666666;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 22px;
+  list-style-type: none;
+  text-align: left;
+}
+
+#linkHeader {
+  width: 50%;
+  height: 150px;
+  background-color:#fff;
+  margin: 40px auto 0 auto;
+   
+}
+
+footer .rectangle {
+  width: 3px;
+  height: 140px;
+  background: black;
+  margin: 0 30px 0 0;
+  float: left;
+  display: inline-block;
+
+}
+
+footer .icon {
+  float: left;
+  margin: 0 5px 0 0;
+}
+
+  
+/* Links Styling */
+
+footer .links {
+  width: 30%;
+  height: 100px;
+  float: left;
+  margin: 0;
+  display: inline-block;
+}
+
+
+
+/* Contact Styling */
+
+footer .contact {
+  margin-left: -30px;
+  width: 30%;
+  height: 100px;
+  float: left;
+  display: inline-block;
+
+}
+
+
+/* About Section  */
+
+footer .about {
+  margin-left: -35px;
+  font-size: 10px;
+  width: 30%;
+  height: 100px;
+  float: left;
+  display: inline-block;
+
+}
+
+
+/* Newsletter Styling */ 
+
+footer .newsletter {
+  margin-top: 2.5%;
+  width: 40%;
+  text-align: center;
+  display: inline-block;
+}
+
+footer .newsletter p {   
+  font-size: 13px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500; 
+  line-height: 0;
+  text-align: center;
+  
+}
+
+footer input[type=text] {
+
+    width: 60%;
+    padding: 15px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px #D9D6D6;
+    background-color: #F2F2F2;
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+
+
+footer input[type=button], input[type=submit], input[type=reset] {
+
+    background-color: black;
+    border: 2px;
+    border-radius: 4px;
+    color: white;
+    padding: 15px 35px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+  
+}
+
+/* Copyright Styling */ 
+
+footer .rectangle-horiz {
+  height: 3px;
+  background: black;
+  margin: 20px 0 0 0;
+
+}
+
+
+footer #copyright {
+  width: 100%;
+  margin-top: 30px;
+}
+
+footer .copy {
+  color: #a7a7a7;
+  font-size: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+  margin-left: 20px;
+  display: inline-block;
+  overflow: hidden;
+
+}
