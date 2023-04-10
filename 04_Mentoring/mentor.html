@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>H&C Mentoring</title>
+  <link rel="shortcut icon" href="/dev_img/logo.png">
+    <link href="/04_Mentoring/mentorStyle.css" rel="stylesheet" type="text/css" />
+    <style>
+    body::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js">
+  </script>
+</head>
+
+<body>
+  <!--   NAVIGATION BAR -->
+<div class="header">
+    <div class="logo">
+      <a href="/index.html"> Kaleido </a>
+    </div>
+    <div class="menu">
+      <a href="/01_Opportunities/opp.html" class="link">
+        <div>General Volunteerting</div>
+        <div style="border-bottom: 5px solid #FF333A;"class="bar"></div>
+      </a>
+      <a href="/02_AnimalShelter/animal.html" class="link">
+        <div>Stranimals</div>
+        <div style="border-bottom: 5px solid #FFBE0A;" class="bar"></div>
+      </a>
+      <a href="/03_Transportation/transport.html" class="link">
+        <div>OK-Transport</div>
+        <div style="border-bottom: 5px solid #82BC24;" class="bar"></div>
+      </a>
+      <a href="/04_Mentoring/mentor.html" class="link">
+        <div>H&C Mentoring</div>
+        <div style="border-bottom: 5px solid #1982C4;" class="bar"></div>
+      </a>
+      <a href="/05_Fundraising/fun.html" class="link">
+        <div>Fundraising</div>
+        <div style="border-bottom: 5px solid #6A4C93;" class="bar"></div>
+      </a>
+    </div>
+  </div>
+
+  <div id="yass">
+  <h1 style="text-align: center; font-family: 'Poppins', sans-serif;"> MATCH WITH AN H&C MENTOR </h1>
+  <p style="text-align: center; font-family: 'Open Sans', sans-serif; font-weight: 300; font-size: 15px;"> Whether it be studying for your next math test or learning how to make eggs, Kaleido© has you covered!</p>
+  <p style="text-align: center; font-family: 'Open Sans', sans-serif; font-weight: 300; font-size: 15px;"> H&C fellows are all current graduate students who are willing to help you with any problem you have. Take this short questionnaire to get matched with a fellow!</p>
+  </div>  
+<div class="divSpace">  
+   <div style="box-shadow: 8px 8px 0 #FF333A;"id="type" class="modal">
+    <p class="message">Type of Service for This Session</p>
+    <div class="options">
+      <button onclick="typeButton()" id="tutoring" class="btn">Tutoring</button>
+      <button onclick="typeButton()" id="mentoring" class="btn">Mentorship</button>
+    </div>
+  </div>
+  
+    <div style="display:none; box-shadow: 8px 8px 0 #FFBE0A;" id="time" class="modal">
+    <p class="message">Time Period Needed</p>
+    <div class="options">
+      <button onclick="timeButton()" id="<1day" class="btn"> >1 Day</button>
+      <button onclick="timeButton()" id="1week" class="btn"> ~1 Week </button>
+      <button onclick="timeButton()" id=">1month" class="btn"> >1 Month </button>
+    </div>
+  </div>
+  
+    <div style="display:none; box-shadow: 8px 8px 0 #82BC24;" id="age" class="modal">
+    <p class="message">What Type of Student Are You?</p>
+    <div class="options">
+      <button onclick="ageButton()" id="hs" class="btn">High School Student</button>
+      <button onclick="ageButton()" id="college" class="btn">College Student</button>
+    </div>
+  </div>
+  
+  <div style="display:none; box-shadow: 8px 8px 0 #1982C4; text-align:center;" id="resultBox" class="modal">
+    <h1 id="result" style="text-align:center;"></h1>
+    <img style="width: 200px; height:200px; text-align: center; border: 2px solid #1982C4;" id="image">
+    <br>
+    <p style="text-align:center;" id="bio"></p>
+      <div class="footer-social-icons">
+    <ul class="social-icons">
+        <li><a href=# class="social-icon"> <i class="fa fa-calendar"></i></a></li>
+        <li><a href=# class="social-icon"> <i class="fa fa-skype"></i></a></li>
+        <li><a href=# class="social-icon"> <i class="fa fa-envelope-o"></i></a></li>
+</div>
+    </div>
+</div>
+  <!--   FOOTER -->
+  <footer>
+
+    <div id="linkHeader">
+
+      <div class="links">
+        <ul>
+          <h3 class="left">Navigation</h3>
+          <li><a href="/01_Opportunities/opp.html">General Opportunities</a></li>
+          <li><a href="/02_AnimalShelter/animal.html">Animal Shelters</a></li>
+          <li><a href="/03_Transportation/transport.html">Alternative Transportation</a></li>
+          <li><a href="/04_Mentoring/mentor.html">Student Mentorship</a></li>
+          <li><a href="/05_Fundraising/fun.html">Fundraising</a></li>
+        </ul>
+      </div>
+
+
+      <div class="rectangle"></div>
+
+      <div class="contact">
+        <ul>
+          <h3 class="left">Contact</h3>
+          <li><a href="#">Company Information</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><img class="icon" width="18" height="14" src="https://png.pngitem.com/pimgs/s/148-1489577_transparent-pants-icon-png-chat-icon-png-transparent.png" </img><a href="#">Live Chat</a></li>
+          <li><img class="icon" width="15" height="15" src="https://www.kindpng.com/picc/m/501-5013043_telephone-phone-call-icon-symbol-vector-tel-icon.png" </img><a href="#">1-888-922-2336</a></li>
+        </ul>
+      </div>
+
+      <div class="rectangle"></div>
+
+      <div class="about">
+        <ul>
+          <h3 class="left">About Kaleido</h3>
+          <p class="footer_paragraph">Kaleido provides quality opportunities to passionate students all over the United
+            States. We equip and connect young adults to various ways to improve their technical skills while helping
+            their local community.</p>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="newsletter">
+      <h3 class="center">Never Miss An Opportunity!</h3>
+      <p>Weekly newsletter, blog posts, updates, and more.</p>
+      <form>
+        <input type="text" placeholder="Enter email address">
+        <input type="submit" value="Sign Up">
+      </form>
+    </div>
+
+
+    <div class="rectangle-horiz"></div>
+
+    <div id="copyright">
+      <p class="copy">© 2022 Kaleido. All Rights Reserved.</p>
+      <p class="copy">Privacy Policy | Terms and Conditions</p>
+    </div>
+
+
+  </footer>
+  <script src="/04_Mentoring/mentorScript.js"></script>
+</body>
+
+</html>
